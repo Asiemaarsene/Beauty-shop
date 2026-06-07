@@ -290,7 +290,7 @@ body {
         height:400px;
     }
     .btn-primary{
-        top:75%
+        top:70%
     } 
     .brand{
         font-size: 35px !important;
@@ -307,7 +307,7 @@ body {
         height:auto;
     }
     .controls{
-        display:flex;
+        display:fnone;
         position:absolute;
         top:405%;
         background-color:transparent;
