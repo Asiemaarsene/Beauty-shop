@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Services</title>
+        <meta name="description" content="Precious Beauty Shop offers salon, spa, and barber services in Nairobi. Book your appointment today for style, relaxation, and transformation.">
+        <meta name="keywords" content="beauty shop Nairobi, salon Kenya, barber Nairobi, spa services Kenya">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/0bd7229511.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css";>
+
+        <!-- Smartsupp Live Chat script -->
+        <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = 'eafa58c1406f77d00f3a5bab6e6f6093cad23a2d';
+        window.smartsupp||(function(d) {
+        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+        c.type='text/javascript';c.charset='utf-8';c.async=true;
+        c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+        })(document);
+        </script>
+        <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+
+        <style>
+        /*Arrow*/
+
+        .arrow-divider {
+            text-align: center;
+            margin: 40px 0; /* Adjusts spacing around the divider */
+            padding-bottom: 30px;
+            
+        }
+
+        .arrow {
+            display: inline-block;
+            width: 95%;    /* Length of the arrow body */
+            height: 1px;   /* Thickness of the arrow body */
+            background-color: #e58d2f; /* Color of the arrow body */
+            position: relative;
+             /* Space for the arrowheads */
+        }
+
+        .arrow-head {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent; /* Top point of the arrow */
+            border-bottom: 10px solid transparent; /* Bottom point of the arrow */
+            position: absolute;
+        }
+
+        .arrow-head.left {
+            left: -10px; /* Adjust position for left arrowhead */
+            border-right: 10px solid #e58d2f; /* Color of the left arrowhead */
+        }
+
+        .arrow-head.right {
+            right: -10px; /* Adjust position for right arrowhead */
+            border-left: 10px solid #e58d2f; /* Color of the right arrowhead */
+           
+        }
+
+         /*Arrow*/
+          /*menu*/
+        .menu {
+            display:none;
+            flex-direction: column;
+            background-color: #005177;
+            position: absolute;
+            top: 38px;
+            left: 0px;
+            width: 150px;
+            border-bottom-right-radius: 5px;
+            z-index: 100;
+        }
+        /*menu*/
+    </style>
+    </head>
+    <body>
+        <div class="container-fluid background-color">
+            <div class="row" style=" background-color: #005177;">
+                            <!--Hamburger menu-->
+                            <button class="hamburger">☰</button>
+                            <div class="menu" id="menu">
+                                <a href="index.html">Home</a>
+                                <a href="about.html">About</a>
+                                <a href="services.html">services</a>
+                                <a href="appointment.html">Book appointment</a>
+                                <a href="#"  data-bs-toggle="modal" data-bs-target="#pricelist" >View price list</a>
+                            </div>
+                            <!--Hamburger menu-->
+                        <nav>    
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="services.html">Services</a>
+                            <a href="appointment.html">Book appointment</a> 
+                        </nav> 
+            </div>           
+            <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="row">
+                            <div class="logo">
+                                    <h1 style="color:black;">SERVICES</h1>
+                            </div>
+                        </div>
+
+                        <div class="row" style="padding-top:20px;">
+                            <!--Arrow-->
+                            <div class="arrow-divider">
+                                
+                                <div class="arrow">
+                                    
+                                    <div class="arrow-head left"></div>
+                                    <span style="position: absolute; left: 50%; transform: translateX(-50%);font-weight: bold; color: #2f69e5;font-size: 20px;">
+                                    SALOON SERVICES
+                                    </span>
+                                    <div class="arrow-head right"></div>
+                                </div>
+                                
+                            </div>
+                            <!--Arrow-->
+                            <div class="col-md-5">
+                                <img src="Images/sallon.png" alt="sallon" class="img-fluid">
+                            </div>
+                            <div class="col-md-7">
+                                <p>
+                                    Our salon caters to both <b>men</b> and <b>women</b>, providing precision haircuts, creative styling, and expert grooming. Whether you’re looking for a fresh new look, professional barber services, or elegant styling for a special occasion, our skilled team ensures every client leaves feeling confident and polished. We combine modern techniques with personalized care to bring out your best style.
+                                </p>    
+                                <p><button id="myButton" class="btn btn-dark hiremetag"  data-bs-toggle="modal" data-bs-target="#pricelist" style="margin-left:10px;">VIEW PRICE LIST</button></p>
+                                <p><button id="myButton" class="btn btn-dark hiremetag" style="margin-left:10px;"><a href="appointment.html" style="text-decoration: none; color: white;">BOOK APPOINTMENT</a></button></p>
+                            </div>
+                        </div>
+                        <div class="row"  style="padding-top:60px;">
+                            <!--Arrow-->
+                            <div class="arrow-divider">
+                                
+                                <div class="arrow">
+                                    
+                                    <div class="arrow-head left"></div>
+                                    <span style="position: absolute; left: 50%; transform: translateX(-50%);font-weight: bold; color: #2fe5a8;font-size: 20px;">
+                                    SPA SERVICES
+                                    </span>
+                                    <div class="arrow-head right"></div>
+                                </div>
+                                
+                            </div>
+                            <!--Arrow-->
+                            <div class="col-md-7">
+                                 
+                                <p>
+                                    Our spa is a sanctuary of relaxation, offering a range of treatments designed to rejuvenate your body and mind. From soothing full‑body massages and revitalizing facials to calming aromatherapy sessions, every experience is tailored to melt away stress and restore balance. Step into a tranquil environment where wellness and serenity come together.
+                                </p>   
+                                <p><button id="myButton" class="btn btn-dark hiremetag" data-bs-toggle="modal" data-bs-target="#pricelist" style="margin-left:10px;">  VIEW PRICE LIST </button></p>
+                                <p><button id="myButton" class="btn btn-dark hiremetag" style="margin-left:10px;"><a href="appointment.html" style="text-decoration: none; color: white;" >  BOOK APPOINTMENT</a></button></p>
+                            </div>
+                            <div class="col-md-5">
+                                <img src="Images/spa.png" alt="spa" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="row"  style="padding-top:60px;padding-bottom:60px">
+                            <!--Arrow-->
+                            <div class="arrow-divider">
+                                
+                                <div class="arrow">
+                                    
+                                    <div class="arrow-head left"></div>
+                                    <span style="position: absolute; left: 50%; transform: translateX(-50%);font-weight: bold; color: #e58d2f;font-size: 20px;">
+                                    BEAUTY PACKAGES
+                                    </span>
+                                    <div class="arrow-head right"></div>
+                                </div>
+                                
+                            </div>
+                            <!--Arrow-->
+                            <div class="col-md-5">
+                                <img src="Images/Beauty package.png" alt="Beauty package" class="img-fluid">
+                            </div>
+                            <div class="col-md-7">
+                                
+                                <p>
+                                    For those seeking the ultimate pampering experience, our beauty packages combine luxury and value. Choose from tailored bundles that include hair, skin, and spa treatments — perfect for weddings, anniversaries, or simply indulging yourself. Each package is thoughtfully designed to deliver a complete transformation, leaving you refreshed, radiant, and ready to shine.
+                                </p>   
+                                <p><button id="myButton" class="btn btn-dark hiremetag" data-bs-toggle="modal" data-bs-target="#pricelist" style="margin-left:10px;">  VIEW PRICE LIST</button></p>
+                                <p><button id="myButton" class="btn btn-dark hiremetag" style="margin-left:10px;"><a href="appointment.html"  style="text-decoration: none; color: white;">BOOK APPOINTMENT</a></button></p>
+                            </div>
+                        </div>
+
+
+                        <!--pricelist-->
+                        <div class="modal fade" id="pricelist">
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel"><b>PRICE LIST</b></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <P>
+                                   <img src="Images/Appointment.png" alt="Appointment" class="img-fluid" style="width:100%;;">
+                                </P>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger btnmodal" data-bs-dismiss="modal">Close</button>
+                                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!--pricelist-->
+                    
+
+                        <div class="footer">
+                            <div class="row" style="padding-top:30px;background-color: #0073aa !important;">
+                                <div class="col-sm-4 info">
+                                    <h6 style="margin-left:0px;color:white;"><u>OUR SOCIALS</u></h6>
+
+                                    <div class="icon-social">
+                                        <a href="https://m.me/Arsene Asigi" target="_blank" style="background-color:none;">
+    
+                                            <i class="fa fa-facebook-square"></i>
+                                        </a>
+                                        <a href="#" style="background-color:none;">
+                                            <i class="	fa fa-instagram"></i>
+                                        </a>
+                                        <a href="https://wa.me/254718853027?text=Hello,%20I%20am%20interested%20in%20your%20services!" target="_blank" style="background-color: none;">
+                                            <i class="fa fa-whatsapp"></i>
+                                        </a>
+                                        <a href="https://www.tiktok.com/@deluxe.webworks" target="_blank" style="display:inline-flex; align-items:center; justify-content:center;">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/3116/3116491.png"  alt="TikTok" width="25" height="25" style="filter: invert(1) hue-rotate(200deg) brightness(0.9);">    
+                                        </a>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-sm-4 info">
+                                    <h6 style="color:white;margin-left:0px"><u>CONTACT</u></h6>
+                                    <p style="color:white;margin-left:0px;font-size:12px;">07XXXXXXXX</p>
+                                    <P style="color:white;margin-left:0px;font-size:12px;">07XXXXXXXX</P>
+                                    <P style="color:white;margin-left:0px;font-size:13px;">info@gmail.com</P>
+
+                                </div>
+
+                                <!--subscription for newsletters-->
+                                <div class="col-sm-4 info">
+                                    <h6 style="color:white;"><u>SUBSCRIPTION</u></h6>
+                                    <p style="font-size:13px;color:white">Subscribe to newsletters to get updates on exclusive offers
+                                    </p>
+                                    <div class="row mb-3">
+                                        <div class="col-sm-10">
+                                            <form class="d-flex" role="search">
+                                                <input class="form-control me-2" type="search" placeholder="Enter E-mail address" aria-label="Search">
+                                                <button class="btn btn-outline-light" type="submit">Subscribe</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--subscription for newsletters-->
+
+                            </div>
+                            <div class="row" style="background-color: #0073aa !important;">
+                                <div class="col-sm-4 info">
+                                    <h6><u>QUICK LINKS</u></h6>
+                                    <p><a href="index.html"  class="quicklinks">▶ Home</a></p>
+                                    <p><a href="about.html" class="quicklinks">▶ About</a></p>
+                                    <p><a href="services.html" class="quicklinks">▶ Services</a></p>
+                                    <p><a href="contact.html" class="quicklinks">▶ Contact</a></p>
+                                    <p><a href="appointment.html" class="quicklinks">▶ Book appointment</a></p>
+                                     <p><a href="#" class="quicklinks" data-bs-toggle="modal" data-bs-target="#pricelist" >▶ View price list</a></p>
+                                </div>
+                                <div class="col-sm-4 info">
+                                    <h6><u>OPENING HOURS</u></h6>
+                                    <p>▶ Monday     7:00 AM - 8:00 PM</p>
+                                    <p>▶ Tuesday    7:00 AM - 8:00 PM</p>
+                                    <p>▶ Wednesday  7:00 AM - 8:00 PM</p>
+                                    <p>▶ Thursday   7:00 AM - 8:00 PM</p>
+                                    <p>▶ Friday     7:00 AM - 8:00 PM</p>
+                                    <p>▶ Saturday   7:00 AM - 8:00 PM</p>
+                                    <p>▶ Sunday     closed</p>
+                                </div>
+                                <div class="col-sm-4 info">
+                                    <h6><u>OUR SERVICES</u></h6>
+                                    <p><a href="index.html"  class="quicklinks">▶ Spa packages</a></p>
+                                    <p><a href="services.html" class="quicklinks">▶ Salon services</a></p>
+                                    <p><a href="services.html" class="quicklinks">▶ Beauty packages</a></p>
+                                </div>
+                                
+                            </div>
+                            <div class="row" style="background-color: #0073aa !important;">
+                            <p>&copy; 2023 Your Name. All Rights Reserved.</p>
+                            </div>
+                        </div>
+        </div>
+            
+        
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>    
