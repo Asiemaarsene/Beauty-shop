@@ -68,6 +68,57 @@
         .beauty {
             background-color: #d1e0f0;
         }
+        .why-us-section {
+            margin-top: 40px;
+            background: linear-gradient(135deg, #e9f4f7 0%, #f0f8ff 100%);
+            padding: 30px 20px;
+            border-radius: 8px;
+            border-left: 5px solid #0073aa;
+        }
+        .why-us-title {
+            color: #0073aa;
+            font-size: 28px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .points-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 0;
+        }
+        .point {
+            background: white;
+            padding: 18px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .point:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+        .point-icon {
+            color: #0073aa;
+            font-size: 22px;
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .point-text h4 {
+            margin: 0 0 6px 0;
+            color: #0073aa;
+            font-size: 16px;
+        }
+        .point-text p {
+            margin: 0;
+            color: #555;
+            font-size: 13px;
+            line-height: 1.4;
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -111,11 +162,60 @@
             <button>Learn More</button>
         </div>
     </div>
+
+    <section class="why-us-section">
+        <h2 class="why-us-title">Why Choose Us</h2>
+        <div class="points-grid">
+            <div class="point">
+                <div class="point-icon">✓</div>
+                <div class="point-text">
+                    <h4>Expert Team</h4>
+                    <p>Highly trained professionals with years of experience in beauty and wellness.</p>
+                </div>
+            </div>
+            <div class="point">
+                <div class="point-icon">✓</div>
+                <div class="point-text">
+                    <h4>Premium Products</h4>
+                    <p>We use only the highest quality, eco-friendly products for all treatments.</p>
+                </div>
+            </div>
+            <div class="point">
+                <div class="point-icon">✓</div>
+                <div class="point-text">
+                    <h4>Affordable Prices</h4>
+                    <p>Luxury services at competitive rates without compromising quality.</p>
+                </div>
+            </div>
+            <div class="point">
+                <div class="point-icon">✓</div>
+                <div class="point-text">
+                    <h4>Relaxing Ambience</h4>
+                    <p>Serene environment designed to help you unwind and rejuvenate.</p>
+                </div>
+            </div>
+            <div class="point">
+                <div class="point-icon">✓</div>
+                <div class="point-text">
+                    <h4>Easy Booking</h4>
+                    <p>Quick online booking or call us for flexible appointment scheduling.</p>
+                </div>
+            </div>
+            <div class="point">
+                <div class="point-icon">✓</div>
+                <div class="point-text">
+                    <h4>Customer Care</h4>
+                    <p>Dedicated support team ready to assist with any questions or concerns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 <footer>
     <p>&copy; 2023 Your Name. All Rights Reserved.</p>
 </footer>
+
 
 </body>
 </html>
