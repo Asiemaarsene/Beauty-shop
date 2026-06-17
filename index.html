@@ -215,6 +215,23 @@
             font-size: 15px;
             line-height: 1.4;
         }
+            .slideshow {
+            overflow: hidden;
+            position: relative;
+            }
+            .slideshow img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            }
+            .slideshow img.active {
+            opacity: 1;
+           
+            }
     </style>
 
 </head>
@@ -250,7 +267,40 @@
        
 
         <!--FIRST ROW CONTAINING PRODUCTS-->
-        <div class="row home-page"><image src="Images/Homepage image.webp" alt="Homepage Image" style="padding: 0 0px;"></image></div>
+        <div class="row home-page slideshow">
+            <img src="Images/Home2.png" alt="Homepage Image"  class="active" style="padding: 0 0px;">
+            <img src="Images/Homepage image.webp" alt="Homepage Image" style="padding: 0 0px;">
+            <img src="Images/Home3.png" alt="Homepage Image" style="padding: 0 0px;">
+        </div>
+        <script>
+            let sliderIndex = 0;
+            const slideshow = document.querySelector('.slideshow');
+            const images = document.querySelectorAll('.slideshow img');
+
+            function adjustSlideshowHeight() {
+            if (!slideshow) return;
+            const active = slideshow.querySelector('img.active') || images[0];
+            if (!active) return;
+            if (active.complete && active.naturalWidth) {
+                slideshow.style.height = active.clientHeight + 'px';
+            } else {
+                active.addEventListener('load', () => {
+                slideshow.style.height = active.clientHeight + 'px';
+                }, { once: true });
+            }
+            }
+
+            window.addEventListener('load', adjustSlideshowHeight);
+            window.addEventListener('resize', adjustSlideshowHeight);
+
+            setInterval(() => {
+            images[sliderIndex].classList.remove('active');
+            sliderIndex = (sliderIndex + 1) % images.length;
+            images[sliderIndex].classList.add('active');
+            adjustSlideshowHeight();
+            }, 10000); // changes every 10 seconds
+        </script>
+        
         <section>
             <div class="brand">
                 PRECIOUS BEAUTY LAUNGE

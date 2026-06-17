@@ -59,10 +59,12 @@ body {
     background-color:rgb(130, 130, 130);
     color:white;
 }
-
+.home-page img{
+    height:650px !important;
+}
 .btn-primary {
     background-color:#0073aa;
-    border: 1px solid black;
+    border:none;
     position :absolute;
     top:85%;
     font-family: 'Times New Roman', Times, serif;
@@ -287,8 +289,8 @@ body {
         display:block;
     }
     
-    .home-page{
-        height:400px;
+    .home-page img{
+        height:400px !important;
     }
     .btn-primary{
         top:500px;
