@@ -300,6 +300,7 @@ body {
     }
     .btn-primary a{
     padding:5px 20px;
+    display:inline-block;
     } 
     .brand{
         font-size: 35px !important;
