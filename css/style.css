@@ -72,7 +72,7 @@ body {
     font-size: 15px;
 }
 .btn-primary a{
-    padding:5px 20px !important;
+    padding:5px 20px;
 }
 
 /*Where beauty meets relaxation*/
@@ -297,6 +297,9 @@ body {
     }
     .btn-primary{
         top:500px;
+    }
+    .btn-primary a{
+    padding:5px 20px;
     } 
     .brand{
         font-size: 35px !important;
