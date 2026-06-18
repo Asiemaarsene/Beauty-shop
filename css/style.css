@@ -66,9 +66,9 @@ body {
     background-color:#0073aa;
     border:none;
     position :absolute;
+    padding:0;
     top:85%;
     font-family: 'Times New Roman', Times, serif;
-    padding:5px 20px;
     font-size: 15px;
 }
 
