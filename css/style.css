@@ -71,6 +71,9 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
 }
+.btn-primary a{
+    padding:5px 20px;
+}
 
 /*Where beauty meets relaxation*/
 .description{
