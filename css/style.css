@@ -73,6 +73,7 @@ body {
 }
 .btn-primary a{
     padding:5px 20px;
+    display:inline-block;
 }
 
 /*Where beauty meets relaxation*/
